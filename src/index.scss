@@ -6,3 +6,8 @@ $theme-colors: (
 );
 // import bootstrap library 
 @import '~bootstrap/scss/bootstrap';
+
+/******** page card divider css *************/
+.divider-bg { 
+    left: -28px;
+}

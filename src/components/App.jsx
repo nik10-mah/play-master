@@ -9,7 +9,7 @@ import Register from "./account/Register";
 const App = () => {
   return (
     <Router>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
