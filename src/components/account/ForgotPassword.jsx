@@ -1,14 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Button,
-  InputGroup,
-  Form,
-} from "react-bootstrap";
+import { Row, Col, Card, Button, Form } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 const ForgotPassword = () => {
