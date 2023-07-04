@@ -56,8 +56,8 @@ const ForgotPassword = () => {
               </Row>
               <Form.Group className="my-1 text-center">
                 <Form.Text className="text-primary fst-italic">
-                  An <span className="text-secondary">Email Send to you</span>
-                  Please check your spam
+                  An <span className="text-secondary">Email Send To You</span>,
+                  Please Check Your Spam
                 </Form.Text>
               </Form.Group>
             </Form>

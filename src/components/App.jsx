@@ -6,6 +6,7 @@ import Home from "./home/Home";
 import Login from "./account/Login";
 import Header from "./layouts/Header";
 import Register from "./account/Register";
+import ForgotPassword from "./account/ForgotPassword";
 const App = () => {
   return (
     <Router>
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/ForgotPassword" element={<ForgotPassword />} />
       </Routes>
     </Router>
   );
