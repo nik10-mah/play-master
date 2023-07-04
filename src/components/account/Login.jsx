@@ -28,14 +28,14 @@ const Login = () => {
             <p className="text-secondary">welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Email address" />
+                <Form.Control  className="form-control-lg rounded-0" type="email" placeholder="Email address" />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <InputGroup className="mb-3">
                   <Form.Control
                     type="password"
-                    className="border-end-0"
+                    className="border-end-0 form-control-lg rounded-0"
                     placeholder="Password"
                   />
                   <InputGroup.Text

@@ -26,7 +26,7 @@ const ForgotPassword = () => {
             <p className="text-secondary">welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Email address" />
+                <Form.Control type="email" className="form-control-lg rounded-0"  placeholder="Email address" />
               </Form.Group>
 
               <Row className="g-0 justify-content-center">
