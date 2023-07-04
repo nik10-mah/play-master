@@ -1,10 +1,9 @@
 import React from "react";
-import { Row, Col, Card, Button, Form } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 import manbg from "../../manbg.svg";
 import homepagecard from "../../homepagecard.svg";
 import Background from "../../bgpatterenhome.svg";
 import headingtext from "../../headingtext.svg";
-import { Container, Navbar } from "react-bootstrap";
 const Home = () => {
   return (
     <Row
@@ -12,7 +11,6 @@ const Home = () => {
       style={{
         background: `url(${Background})`,
         width: "100%",
-
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
