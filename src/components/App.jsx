@@ -10,7 +10,7 @@ import ForgotPassword from "./account/ForgotPassword";
 const App = () => {
   return (
     <Router>
-      {/* <Header/> */}
+       <Header/> 
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

@@ -6,6 +6,9 @@ $theme-colors: (
 );
 // import bootstrap library 
 @import '~bootstrap/scss/bootstrap';
+body{
+    font-family: 'Open Sans', sans-serif!important;
+}
 
 /******** page card divider css *************/
 .divider-bg { 

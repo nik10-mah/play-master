@@ -12,7 +12,7 @@ const Login = () => {
           <img
             src={sbgt}
             className=" h-100 position-absolute bottom-0 z-2 top-0 end-0  start-0"
-            alt="sports bacground"
+            alt="sports background"
           />
         </Card>
       </Col>
@@ -24,7 +24,7 @@ const Login = () => {
         <Card className="vh-100 w-25 divider-bg border-0 position-absolute"></Card>
         <Row className="d-flex justify-content-center w-100 z-3">
           <Col md={6}>
-            <h2>Login</h2>
+            <h2 className="text-primary">Login</h2>
             <p className="text-secondary">welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -65,7 +65,7 @@ const Login = () => {
               </Row>
               <Form.Group className="my-1 text-center">
                 <Form.Text className="text-primary fst-italic">
-                  Email or password incorrect ! forgot your password?{" "}
+                  Email Or Password Incorrect ! Forgot Your Password?{" "}
                   <span className="text-secondary">Reset password</span>
                 </Form.Text>
               </Form.Group>

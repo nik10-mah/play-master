@@ -5,7 +5,7 @@ import ballsbg from "../../ballsbg.svg";
 const ForgotPassword = () => {
   return (
     <Row className="g-0">
-      <Col md={3} xs={12} className="p-0 bg-secondary">
+      <Col md={4} xs={12} className="p-0 bg-secondary position-xs-absolute position-md-relative">
         <Card className="vh-100 ps-0 ms-0 bg-secondary mt-0 pt-0 pb-0 mb-0 border-0 me-5  position-relative">
           <img
             src={sbgt}
@@ -15,7 +15,7 @@ const ForgotPassword = () => {
         </Card>
       </Col>
       <Col
-        md={9}
+        md={8}
         xs={12}
         className="d-flex justify-content-center align-items-md-center mt-3 mt-md-0 vh-100 position-relative"
       >
