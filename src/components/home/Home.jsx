@@ -77,7 +77,7 @@ const Home = () => {
           >
             Prochain Match
           </Button>
-          <h4 className="text-black fw-bolder"> H1-24</h4>
+          <h4 className="text-black fw-bolder"> H- 24</h4>
         </Card>
       </Col>
     </Row>
