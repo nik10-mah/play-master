@@ -7,11 +7,11 @@ import ballsbg from "../../ballsbg.svg";
 const Login = () => {
   return (
     <Row className="g-0">
-      <Col md={3} xs={12} className="p-0 bg-secondary">
-        <Card className="vh-100 ps-0 ms-0 bg-secondary mt-0 pt-0 pb-0 mb-0 border-0 me-5  position-relative">
+      <Col md={3} xs={12} className="p-0 bg-secondary l-side">
+        <Card className="vh-100 ps-0 ms-0 bg-transparent mt-0 pt-0 pb-0 mb-0 border-0 me-5  position-relative">
           <img
             src={sbgt}
-            className=" h-100 position-absolute bottom-0 z-2 top-0 end-0  start-0"
+            className=" h-100  s-img position-absolute bottom-0 z-2 top-0 end-0  start-0"
             alt="sports background"
           />
         </Card>
@@ -23,7 +23,8 @@ const Login = () => {
       >
         <Card className="vh-100 w-25 divider-bg border-0 position-absolute"></Card>
         <Row className="d-flex justify-content-center w-100 z-3">
-          <Col md={7}>
+          <Col md={7} className="d-flex d-md-block align-items-center justify-content-center">
+          <Form.Group className="form-wrap" > 
             <h2 className="text-primary mb-4">Login</h2>
             <p className="text-secondary">Welcome back</p>
             <Form>
@@ -39,7 +40,7 @@ const Login = () => {
                     placeholder="Password"
                   />
                   <InputGroup.Text
-                    className="border-start-0 bg-transparent"
+                    className="border-start-0 bg-white"
                     id="basic-addon1"
                   >
                     {" "}
@@ -65,7 +66,7 @@ const Login = () => {
               </Row>
           
             </Form>
-        
+        </Form.Group>
           </Col>
           <Form.Group className="my-1 text-center">
                 <Form.Text className="text-primary fst-italic fs-4">

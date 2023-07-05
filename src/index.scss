@@ -32,3 +32,29 @@ body{
     color: #7e7e7e !important;
     font-style: italic!important;
   }
+  @media(max-width:1024px)
+  {
+    .l-side
+    {
+        position:absolute;
+        background: #000;
+        opacity:0.4;
+    }
+    .divider-bg { 
+        display:none;
+    }
+    .s-img
+    {
+        opacity:0.4;
+        width:100%;
+    }
+    .l-side-text{
+        width:100%;
+
+    }
+    .f-banner-box
+    {
+      position: relative!important; 
+    }
+   
+  }
