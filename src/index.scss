@@ -14,3 +14,17 @@ body{
 .divider-bg { 
     left: -28px;
 }
+::-webkit-input-placeholder { 
+    color: #7e7e7e !important;
+    font-style: italic!important;
+  }
+  
+  :-ms-input-placeholder {
+    color: #7e7e7e !important;
+    font-style: italic!important;
+  }
+  
+  ::placeholder {
+    color: #7e7e7e !important;
+    font-style: italic!important;
+  }

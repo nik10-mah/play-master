@@ -21,19 +21,19 @@ const ForgotPassword = () => {
       >
         <Card className="vh-100 w-25 divider-bg border-0 position-absolute"></Card>
         <Row className="d-flex justify-content-center w-100 z-3">
-          <Col md={6}>
-            <h2 className="text-primary">Reset Password</h2>
-            <p className="text-secondary">welcome back</p>
+          <Col md={7}>
+            <h2 className="text-primary  mb-4">Reset Password</h2>
+            <p className="text-secondary">Welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="email" className="form-control-lg rounded-0"  placeholder="Email address" />
               </Form.Group>
 
-              <Row className="g-0 justify-content-center">
-                <Col md={8}>
+              <Row className="g-0  mt-5 justify-content-center">
+                <Col md={9}>
                   <Button
                     variant="secondary"
-                    className="fw-bold w-100 rounded-4 fst-italic text-white"
+                    className="fw-bold w-100 fs-3 btn-lg rounded-4 fst-italic text-white"
                     type="submit"
                   >
                     return to the field
@@ -45,14 +45,15 @@ const ForgotPassword = () => {
                   </Form.Group>
                 </Col>
               </Row>
-              <Form.Group className="my-1 text-center">
-                <Form.Text className="text-primary fst-italic">
+            
+            </Form>
+          </Col>
+          <Form.Group className="my-1 text-center">
+                <Form.Text className="text-primary fst-italic fs-4">
                   An <span className="text-secondary">Email Send To You</span>,
                   Please Check Your Spam
                 </Form.Text>
               </Form.Group>
-            </Form>
-          </Col>
         </Row>
 
         <img

@@ -23,9 +23,9 @@ const Login = () => {
       >
         <Card className="vh-100 w-25 divider-bg border-0 position-absolute"></Card>
         <Row className="d-flex justify-content-center w-100 z-3">
-          <Col md={6}>
-            <h2 className="text-primary">Login</h2>
-            <p className="text-secondary">welcome back</p>
+          <Col md={7}>
+            <h2 className="text-primary mb-4">Login</h2>
+            <p className="text-secondary">Welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control  className="form-control-lg rounded-0" type="email" placeholder="Email address" />
@@ -47,11 +47,11 @@ const Login = () => {
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
-              <Row className="g-0 justify-content-center">
-                <Col md={8}>
+              <Row className="g-0 mt-5 justify-content-center">
+                <Col md={9}>
                   <Button
                     variant="secondary"
-                    className="fw-bold w-100 rounded-4 fst-italic text-white"
+                    className="fw-bold w-100 btn-lg fs-3 rounded-4 fst-italic text-white"
                     type="submit"
                   >
                     return to the field
@@ -63,16 +63,18 @@ const Login = () => {
                   </Form.Group>
                 </Col>
               </Row>
-              <Form.Group className="my-1 text-center">
-                <Form.Text className="text-primary fst-italic">
+          
+            </Form>
+        
+          </Col>
+          <Form.Group className="my-1 text-center">
+                <Form.Text className="text-primary fst-italic fs-4">
                   Email Or Password Incorrect ! Forgot Your Password?{" "}
                   <span className="text-secondary">Reset password</span>
                 </Form.Text>
               </Form.Group>
-            </Form>
-          </Col>
         </Row>
-
+    
         <img
           src={ballsbg}
           className=" w-25 position-absolute bottom-0  end-0"
