@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row, Col, Card, Button, InputGroup, Form } from "react-bootstrap";
+import { Row, Col, Card, Button, InputGroup, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 
@@ -28,18 +28,18 @@ const Login = () => {
             <p className="text-secondary">Welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control  className="form-control-lg rounded-0" type="email" placeholder="Email address" />
+                <Form.Control  className="form-control-lg rounded-0 border border-warning" type="email" placeholder="Email address" />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <InputGroup className="mb-3">
                   <Form.Control
                     type="password"
-                    className="border-end-0 form-control-lg rounded-0"
+                    className="border-end-0 form-control-lg rounded-0 border border-warning"
                     placeholder="Password"
                   />
                   <InputGroup.Text
-                    className="border-start-0 bg-transparent"
+                    className="border-start-0 bg-transparent rounded-0 border border-warning"
                     id="basic-addon1"
                   >
                     {" "}
@@ -57,8 +57,8 @@ const Login = () => {
                     return to the field
                   </Button>
                   <Form.Group className="my-3 text-center">
-                    <Form.Text className="text-muted">
-                      Not have a account? Create here
+                    <Form.Text className="text-muted d-flex align-items-center justify-content-center">
+                      Not have an account? <Nav.Link className="ps-1 text-primary" href="/register">Create here</Nav.Link>
                     </Form.Text>
                   </Form.Group>
                 </Col>
@@ -68,9 +68,8 @@ const Login = () => {
         
           </Col>
           <Form.Group className="my-1 text-center">
-                <Form.Text className="text-primary fst-italic fs-4">
-                  Email Or Password Incorrect ! Forgot Your Password?{" "}
-                  <span className="text-secondary">Reset password</span>
+                <Form.Text className="text-primary fst-italic fs-4 d-flex align-items-center justify-content-center">
+                  Email Or Password Incorrect ! Forgot Your Password?<Nav.Link className="text-secondary ms-1" href="/ForgotPassword">Reset password</Nav.Link>
                 </Form.Text>
               </Form.Group>
         </Row>

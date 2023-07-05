@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Button, Form } from "react-bootstrap";
+import { Row, Col, Card, Button, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 const ForgotPassword = () => {
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
             <p className="text-secondary">Welcome back</p>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" className="form-control-lg rounded-0"  placeholder="Email address" />
+                <Form.Control type="email" className="form-control-lg rounded-0 border border-warning"  placeholder="Email address" />
               </Form.Group>
 
               <Row className="g-0  mt-5 justify-content-center">
@@ -39,8 +39,8 @@ const ForgotPassword = () => {
                     return to the field
                   </Button>
                   <Form.Group className="my-3 text-center">
-                    <Form.Text className="text-muted">
-                      Not have a account? Create here
+                    <Form.Text className="text-muted d-flex align-items-center justify-content-center">
+                      Not have an account? <Nav.Link className="ps-1 text-primary" href="/register">Create here</Nav.Link>
                     </Form.Text>
                   </Form.Group>
                 </Col>
