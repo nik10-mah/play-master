@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Card, Button, InputGroup, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 
 const Login = () => {
+  const [showPwd, setShowPwd] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
   }
@@ -38,7 +39,7 @@ const Login = () => {
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <InputGroup className="mb-3">
                   <Form.Control
-                    type="password"
+                    type={showPwd ? "text" :  "password"}
                     className="border-end-0 form-control-lg rounded-0 border border-warning"
                     placeholder="Password"
                   />
@@ -47,7 +48,7 @@ const Login = () => {
                     id="basic-addon1"
                   >
                     {" "}
-                    <FontAwesomeIcon icon={['far', 'eye']} />
+                    <FontAwesomeIcon icon={showPwd ? ['far', 'eye-slash'] : ['far', 'eye']} onClick={() => setShowPwd(!showPwd)}/>
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
