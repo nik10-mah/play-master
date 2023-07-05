@@ -19,6 +19,8 @@ body{
 .divider-bg { 
     left: -28px;
 }
+/********** placeholder css **************/
+
 ::-webkit-input-placeholder { 
     color: #7e7e7e !important;
     font-style: italic!important;
@@ -33,6 +35,8 @@ body{
     color: #7e7e7e !important;
     font-style: italic!important;
   }
+  /************ responsive css for mobile *************/
+  
   @media(max-width:1024px)
   {
     .l-side
