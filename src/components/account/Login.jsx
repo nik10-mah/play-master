@@ -5,6 +5,10 @@ import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <Row className="g-0">
       <Col md={3} xs={12} className="p-0 bg-secondary">
@@ -26,7 +30,7 @@ const Login = () => {
           <Col md={7}>
             <h2 className="text-primary mb-4">Login</h2>
             <p className="text-secondary">Welcome back</p>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control  className="form-control-lg rounded-0 border border-warning" type="email" placeholder="Email address" />
               </Form.Group>

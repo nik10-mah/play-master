@@ -3,6 +3,9 @@ import { Row, Col, Card, Button, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 const ForgotPassword = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
   return (
     <Row className="g-0">
       <Col md={3} xs={12} className="p-0 bg-secondary position-xs-absolute position-md-relative">
@@ -24,7 +27,7 @@ const ForgotPassword = () => {
           <Col md={7}>
             <h2 className="text-primary  mb-4">Reset Password</h2>
             <p className="text-secondary">Welcome back</p>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="email" className="form-control-lg rounded-0 border border-warning"  placeholder="Email address" />
               </Form.Group>
