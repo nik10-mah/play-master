@@ -20,7 +20,7 @@ const Home = () => {
         xs={12}
         className="p-0 bg-transparent position-xs-absolute position-md-relative"
       >
-        <Card className="vh-100 ps-0 ms-0 bg-transparent mt-0 pt-0 pb-0 mb-0 border-0 me-5  position-relative">
+        <Card className="vh-body ps-0 ms-0 bg-transparent mt-0 pt-0 pb-0 mb-0 border-0 me-5  position-relative">
           <img
             src={manbg}
             className=" h-100 position-absolute bottom-0 z-2 top-0 end-0  start-0"
@@ -31,7 +31,7 @@ const Home = () => {
       <Col
         md={8}
         xs={12}
-        className="d-flex justify-content-center  mt-3 mt-md-0 vh-100 position-relative"
+        className="d-flex justify-content-center  mt-3 mt-md-0 vh-body  position-relative"
       >
         <Row className="d-flex justify-content-start w-100 z-3">
           <Col md={8}>

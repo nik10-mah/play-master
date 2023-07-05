@@ -9,6 +9,10 @@ $theme-colors: (
 body{
     font-family: 'Open Sans', sans-serif!important;
 }
+.vh-body 
+{
+    height: calc(100vh - 140px);
+}
 
 /******** page card divider css *************/
 .divider-bg { 
