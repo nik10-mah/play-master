@@ -65,7 +65,7 @@ const Login = () => {
                   </Button>
                   <Form.Group className="my-3 text-center">
                     <Form.Text className="text-muted d-flex align-items-center justify-content-center">
-                      Not have an account? <Nav.Link className="ps-1 text-primary" href="/register">Create here</Nav.Link>
+                      Not have an account? <Nav.Link className="ps-1 text-truncate text-primary" href="/register">Create here</Nav.Link>
                     </Form.Text>
                   </Form.Group>
                 </Col>
@@ -76,7 +76,7 @@ const Login = () => {
           </Col>
           <Form.Group className="my-1 text-center">
                 <Form.Text className="text-primary fst-italic fs-4 d-flex align-items-center justify-content-center">
-                  Email Or Password Incorrect ! Forgot Your Password?<Nav.Link className="text-secondary ms-1" href="/ForgotPassword">Reset password</Nav.Link>
+                  Email Or Password Incorrect ! Forgot Your Password?<Nav.Link className="text-secondary forgot-link ms-1" href="/ForgotPassword">Reset password</Nav.Link>
                 </Form.Text>
               </Form.Group>
         </Row>
