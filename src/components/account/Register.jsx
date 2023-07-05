@@ -50,7 +50,7 @@ const Register = () => {
                     id="basic-addon1"
                   >
                     {" "}
-                    <FontAwesomeIcon icon="fa-eye" />
+                    <FontAwesomeIcon icon={['far', 'eye']} />
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
@@ -66,7 +66,7 @@ const Register = () => {
                     id="basic-addon1"
                   >
                     {" "}
-                    <FontAwesomeIcon icon="fa-eye" />
+                    <FontAwesomeIcon icon={['far', 'eye']} />
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>

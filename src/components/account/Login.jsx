@@ -47,7 +47,7 @@ const Login = () => {
                     id="basic-addon1"
                   >
                     {" "}
-                    <FontAwesomeIcon icon="fa-eye" />
+                    <FontAwesomeIcon icon={['far', 'eye']} />
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
