@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   output: {
@@ -73,6 +74,11 @@ module.exports = {
       template: "./public/index.html",
       // favicon: path.join(__dirname, '../public/favicon.ico')
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+      { from: path.join(__dirname, './public'), to: '../build', filter: (srcPath) => !srcPath.includes('.html') }
+    ],
+    })
   ],
   devServer: {
     historyApiFallback: true,
