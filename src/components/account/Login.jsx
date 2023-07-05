@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row, Col, Card, Button, InputGroup, Form } from "react-bootstrap";
+import { Row, Col, Card, Button, InputGroup, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
 
 const Login = () => {
+  const [showPwd, setShowPwd] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <Row className="g-0">
       <Col md={3} xs={12} className="p-0 bg-secondary l-side">
@@ -27,24 +32,25 @@ const Login = () => {
           <Form.Group className="form-wrap" > 
             <h2 className="text-primary mb-4">Login</h2>
             <p className="text-secondary">Welcome back</p>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control  className="form-control-lg rounded-0" type="email" placeholder="Email address" />
+                <Form.Control  className="form-control-lg rounded-0 border border-warning" type="email" placeholder="Email address" />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <InputGroup className="mb-3">
                   <Form.Control
-                    type="password"
-                    className="border-end-0 form-control-lg rounded-0"
+                    type={showPwd ? "text" :  "password"}
+                    className="border-end-0 form-control-lg rounded-0 border border-warning"
                     placeholder="Password"
                   />
                   <InputGroup.Text
-                    className="border-start-0 bg-white"
+                  
+                    className="border-start-0 bg-white rounded-0 border border-warning"
                     id="basic-addon1"
                   >
                     {" "}
-                    <FontAwesomeIcon icon="fa-eye" />
+                    <FontAwesomeIcon icon={showPwd ? ['far', 'eye-slash'] : ['far', 'eye']} onClick={() => setShowPwd(!showPwd)}/>
                   </InputGroup.Text>
                 </InputGroup>
               </Form.Group>
@@ -58,8 +64,8 @@ const Login = () => {
                     return to the field
                   </Button>
                   <Form.Group className="my-3 text-center">
-                    <Form.Text className="text-muted">
-                      Not have a account? Create here
+                    <Form.Text className="text-muted d-flex align-items-center justify-content-center">
+                      Not have an account? <Nav.Link className="ps-1 text-primary" href="/register">Create here</Nav.Link>
                     </Form.Text>
                   </Form.Group>
                 </Col>
@@ -69,9 +75,8 @@ const Login = () => {
         </Form.Group>
           </Col>
           <Form.Group className="my-1 text-center">
-                <Form.Text className="text-primary fst-italic fs-4">
-                  Email Or Password Incorrect ! Forgot Your Password?{" "}
-                  <span className="text-secondary">Reset password</span>
+                <Form.Text className="text-primary fst-italic fs-4 d-flex align-items-center justify-content-center">
+                  Email Or Password Incorrect ! Forgot Your Password?<Nav.Link className="text-secondary ms-1" href="/ForgotPassword">Reset password</Nav.Link>
                 </Form.Text>
               </Form.Group>
         </Row>

@@ -4,8 +4,11 @@ import manbg from "../../manbg.svg";
 import homepagecard from "../../homepagecard.svg";
 import Background from "../../bgpatterenhome.svg";
 import headingtext from "../../headingtext.svg";
+import Header from "../layouts/Header";
 const Home = () => {
   return (
+    <>
+    <Header/> 
     <Row
       className="g-0 pt-5"
       style={{
@@ -85,6 +88,7 @@ const Home = () => {
         </Container>
       </Col>
     </Row>
+    </>
   );
 };
 
