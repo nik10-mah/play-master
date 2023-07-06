@@ -6,11 +6,13 @@ import Home from "./home/Home";
 import Login from "./account/Login";
 import Register from "./account/Register";
 import ForgotPassword from "./account/ForgotPassword";
+import Dashboard from "./dashboard/Dashboard";
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/dashborad" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
