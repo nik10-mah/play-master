@@ -3,11 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Card, Button, InputGroup, Form, Nav } from "react-bootstrap";
 import sbgt from "../../sportsbg.svg";
 import ballsbg from "../../ballsbg.svg";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
   const [showPwd, setShowPwd] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate('/dashboard');
   }
 
   return (

@@ -50,7 +50,7 @@ const Dashboard = () => {
                             <Form.Control
                               className="form-control-lg rounded-0 border border-warning"
                               type="email"
-                              value="Team-TELESIO FC"
+                              defaultValue="Team-TELESIO FC"
                               placeholder="Team-TELESIO FC"
                             />
                           </Form.Group>
@@ -69,7 +69,7 @@ const Dashboard = () => {
                           >
                             <Form.Control
                               className="form-control-lg rounded-0 border border-warning"
-                              value="Team-GENERALI FC"
+                              defaultValue="Team-GENERALI FC"
                               type="email"
                               placeholder="Email address"
                             />
