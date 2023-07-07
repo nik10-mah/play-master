@@ -42,9 +42,9 @@ const Dashboard = () => {
                       <h2 className="text-secondary d-block mb-2">Detail's</h2>
                       <p>Choose sparingly !</p>
                       <Row>
-                        <Col md={5}>
+                        <Col md={5} className="text-center">
                           <Form.Group
-                            className="mb-3"
+                            className="mb-1"
                             controlId="formBasicEmail"
                           >
                             <Form.Control
@@ -54,6 +54,7 @@ const Dashboard = () => {
                               placeholder="Team-TELESIO FC"
                             />
                           </Form.Group>
+                          <p className="text-primary">10P</p>
                         </Col>
                         <Col
                           md={2}
@@ -61,9 +62,9 @@ const Dashboard = () => {
                         >
                           -VS-
                         </Col>
-                        <Col md={5}>
+                        <Col md={5}  className="text-center">
                           <Form.Group
-                            className="mb-3"
+                            className="mb-1"
                             controlId="formBasicEmail"
                           >
                             <Form.Control
@@ -73,6 +74,7 @@ const Dashboard = () => {
                               placeholder="Email address"
                             />
                           </Form.Group>
+                          <p className="text-primary">120P</p>
                         </Col>
                       </Row>
                       <Row>
@@ -93,7 +95,7 @@ const Dashboard = () => {
                           className="d-flex justify-content-center align-items-center"
                         >
                           <p className="text-secondary d-block mt-2">
-                            With you cureent selection if Telesio win you make
+                            With you current selection if Telesio win you make
                             10P
                           </p>
                         </Col>
