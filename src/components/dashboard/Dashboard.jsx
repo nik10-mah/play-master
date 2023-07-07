@@ -58,7 +58,7 @@ const Dashboard = () => {
                         </Col>
                         <Col
                           md={2}
-                          className="d-flex justify-content-center align-items-center"
+                          className="d-flex justify-content-center mt-3"
                         >
                           -VS-
                         </Col>
