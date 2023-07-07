@@ -96,7 +96,7 @@ const Dashboard = () => {
                         >
                           <p className="text-secondary d-block mt-2">
                             With you current selection if Telesio win you make
-                            10P
+                           <span className="text-primary">10P</span> 
                           </p>
                         </Col>
                       </Row>
