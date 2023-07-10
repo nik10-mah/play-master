@@ -20,14 +20,16 @@ const Dashboard = () => {
         }}
       >
         <Row className="g-0 pt-5">
-          <Col md={4} xs={12} className="p-0  bg-transparent ">
-            <Card className=" w-75 ps-0 ms-0 bg-transparent mt-0 pt-0 pb-0 mb-0 ">
+          <Col md={4} xs={12} className="  bg-transparent ">
+          <Container className=" m-md-0 ">
+            <Card className=" w-100  ps-0 ms-0 bg-transparent mt-0 pt-0 pb-0 mb-0 ">
               <img
                 src={playerimage}
-                className=" w-100 "
+                className="w-100"
                 alt="sports bacground"
               />
             </Card>
+            </Container>
           </Col>
           <Col
             md={8}
@@ -105,8 +107,8 @@ const Dashboard = () => {
                 </Col>
               </Row>
               <Row className="d-flex g-0 justify-content-md-start justify-content-center w-100 z-3">
-                <Col md={6}>
-                  <Card className="me-4">
+                <Col md={6} className="mb-4">
+                  <Card className="me-md-4">
                     <Card.Body>
                       <p className="text-secondary d-block  mb-2">Ranked</p>
                       <p className="text-secondary d-block ">
@@ -116,7 +118,7 @@ const Dashboard = () => {
                   </Card>
                 </Col>
                 <Col md={6}>
-                  <Card className="ms-4">
+                  <Card className="ms-md-4">
                     <Card.Body className="text-center">
                       <p className="text-secondary d-block mb-0 ">
                         Score for the match selected
