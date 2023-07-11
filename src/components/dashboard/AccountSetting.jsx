@@ -122,7 +122,65 @@ const Accountsetting = () => {
                     </Col>
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Password content</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                <Row>
+                    <Col md={5} className="mb-3">
+                      <p className="text-secondary text-start fs-3 fst-italic">
+                        Current Password:
+                      </p>
+                    </Col>
+                    <Col md={7} className="text-start mb-3">
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control
+                          className="form-control-lg  rounded-0 border border-secondary"
+                          type="email"
+                          placeholder=""
+                        />
+                      </Form.Group>
+                    </Col>
+                    <Col md={5} className="mb-3">
+                      <p className="text-secondary text-start fs-3 fst-italic">
+                        New Password:
+                      </p>
+                    </Col>
+                    <Col md={7} className="text-start mb-3">
+                      <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control
+                          className="form-control-lg  rounded-0 border border-secondary"
+                          type="email"
+                          placeholder=""
+                        />
+                      </Form.Group>
+                    </Col>
+                    <Col md={5} className="mb-3">
+                      <p className="text-secondary text-start fs-3 fst-italic">
+                        Confirm:
+                      </p>
+                    </Col>
+                    <Col md={7} className="text-start mb-3">
+                      <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control
+                          className="form-control-lg  rounded-0 border border-secondary"
+                          type="email"
+                          placeholder=""
+                        />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={5} className="mb-3"></Col>
+                    <Col md={7} className="text-center">
+                      <Button
+                        variant="secondary"
+                        className="  btn-lg fs-3 px-5 rounded-0 fst-italic text-white"
+                        type="submit"
+                      >
+                        SAVE
+                      </Button>
+                    </Col>
+                  </Row>
+
+                </Tab.Pane>
                 <Tab.Pane eventKey="third">Second tab content</Tab.Pane>
               </Tab.Content>
             </Col>
