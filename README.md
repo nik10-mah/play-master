@@ -1,6 +1,6 @@
 # Play Masters
 
-Online Betting platfomr
+Online Betting platform
 
 
 ## Prequisites
